@@ -1,0 +1,79 @@
+.header {
+  .top--part {
+    background-color: $bg-primary-2;
+  }
+  .top--part_buttons {
+    @include font(20px, $font-regular, $stantart--color_1, 50);
+    text-decoration: none;
+    padding: 6px 20px;
+    display: inline-block;
+  }
+  .top--part_buttons:hover {
+    background-color: $bg-primary-3;
+    color: $bg-primary-2;
+  }
+  ul {
+    margin: 0;
+    padding-left: 0;
+  }
+  .wrapper--1 {
+    li {
+      list-style: none;
+      display: inline-block;
+    }
+  }
+
+  .main--part {
+    @include font(22px, $font-medium, $stantart--color_2, 80);
+    background-image: url(../../img/Bg-main_header.svg);
+    background-size: cover;
+    li {
+      color: $bg-primary-2;
+      margin-left: 35px;
+    }
+    li p {
+      color: $stantart--color_2;
+    }
+  }
+  .main--header_logo {
+    background: url(../../img/Logo.svg) no-repeat;
+    padding: 10px 0;
+    width: 100%;
+    display: block;
+    height: 85px;
+    margin: 25px 0;
+    display: block;
+  }
+  .header--1_rectangle {
+    box-shadow: 2px 4px 7px rgba(155, 182, 190, 0.75);
+    background-color: $bg-primary-3;
+    padding: 17px 38px;
+  }
+
+  .header--1_font {
+    @include font(23px, $font-bold, $bg-primary-2, 700);
+    font-size: 32px;
+    line-height: 36px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0;
+  }
+  .header--2_font {
+    @include font(22px, $font-medium, $stantart--color_2, 700);
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+  .main-header-btns {
+    margin: 25px;
+  }
+  .main-btns {
+    text-decoration: none;
+    @include font(18px, $font-regular, $bg-primary-2, 150);
+    border: 1px solid $bg-primary-2;
+    padding: 5px;
+    width: 230px;
+    margin: 7px 15px;
+    display: inline-block;
+  }
+}
